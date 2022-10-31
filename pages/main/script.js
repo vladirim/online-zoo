@@ -64,3 +64,11 @@ function addCoyrightButton() {
 
 copyrightButton.addEventListener('click', addCoyrightButton);
 
+const roundButton = document.querySelector('.round__button');
+
+function addRoundtButtonGreen() {
+    roundButton.classList.add('button-green');
+  }
+
+  roundButton.addEventListener('click', addRoundtButtonGreen);
+
