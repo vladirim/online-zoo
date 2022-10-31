@@ -166,14 +166,14 @@ img {
 .hero__container {
     width: 100%;
     height: 700px;
-    background-image: url('/assets/images/jpg/Panda.jpg');
+    background-image: url('../../assets/images/jpg/Panda.jpg');
     background-repeat: no-repeat;
 }
 
 .hero {
     position: relative;
     top: 12px;
-    left: 400px;
+    left: 240px;
 }
 
 .circle {
@@ -201,7 +201,7 @@ img {
 
 .hero__button {
     position: relative;
-    top: 69px;
+    top: 135px;
     left: 175px;
 }
 .round__button {
@@ -217,6 +217,10 @@ img {
 
 .round__button:hover {
     background: var(--button-color-hover)
+}
+
+.button-green {
+    background: var(--button-color-active);
 }
 
 
