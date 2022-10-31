@@ -30,6 +30,7 @@
 /*===== BASE =====*/
 *,::before,::after {
     box-sizing: border-box;
+    margin: 0 auto;
 }
 
 html {
@@ -37,8 +38,8 @@ html {
   }
 
 body {
-    margin: 0;
-    padding: 0;
+    width: 100%;
+    max-width: 1600px;
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
     background-color: var(--title-color);
@@ -47,7 +48,7 @@ body {
 }
 
 .container {
-    max-width: 1600px;
+    width: 1600px;
     margin: 0 auto;
 }
 
@@ -162,12 +163,8 @@ img {
 /*==== MAIN ====*/
 /*==== Hero section====*/
 
-.container.main {
-    max-height: 780px;
-}
-
 .hero__container {
-    width: 1600px;
+    width: 100%;
     height: 700px;
     background-image: url('/assets/images/jpg/Panda.jpg');
     background-repeat: no-repeat;
@@ -176,7 +173,7 @@ img {
 .hero {
     position: relative;
     top: 12px;
-    left: 807px;
+    left: 400px;
 }
 
 .circle {
@@ -223,8 +220,12 @@ img {
 }
 
 
-
 /*==== The Backstage section ====*/
+
+.backstage__container {
+    width: auto;
+    display: flex;
+}
 
 .backstage__content {
     position: relative;
@@ -232,11 +233,7 @@ img {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-left: 219px;
-}
-
-.backstage__item {
-    flex: 50%;
+    margin: 0 auto 0 219px;
 }
 
 .bamboo-cap {
@@ -245,16 +242,40 @@ img {
 }
 
 .backstage__text {
-    margin-left: 87px;
+    margin-left: 85px;
+    max-width: 465px;
 }
 
-.backstage__item h2 {
+.backstage__text h2 {
     font-size: var(--h2-font-size);
     color: var(--section-text-color);
+    line-height: 120%;
 }
 
+.backstage__text p {
+    font-size: var(--normal-font-size);
+    color: var(--section-text-color);
+    margin-top: 21px;
+}
+
+.backstage__text .p1 {
+    line-height: 130%;
+}
+
+.backstage__text .p2 {
+    line-height: 140%;
+}
+
+.backstage__text h3 {
+    font-size: var(--h3-font-size);
+    color: var(--section-text-color);
+    margin: 54px 0 34px 0;
+    line-height: 120%;
+}
 
 .flowers {
-    display: inline;
+    position: relative;
+    top: 10px;
+    left: 5px;
 }
 
