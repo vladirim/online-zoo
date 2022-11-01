@@ -294,12 +294,15 @@ img {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 0 auto;
+    margin: 0 30px;
 }
 
-.animal-arrow {
-    margin: 0;
-    padding: 0 5px;
+.animal-arrow-left {
+    margin-right: 20px;
+}
+
+.animal-arrow-right {
+    margin-left: 20px;
 }
 
 .animal-cards {
@@ -330,7 +333,7 @@ img {
 
 .card__text {
     flex: 80%;
-    margin: 8px 0 14px 16px;
+    margin: 8px 0 10px 16px;
 }
 
 .card__title {
@@ -345,5 +348,36 @@ img {
 
 .animal-card__icon {
     flex: 20%;
-    margin: 10px 13px 13px 0;
+    margin: 5px 13px 5px 0;
+}
+
+.animal__button {
+    text-align: center;
+    margin-top: 79px;
+}
+
+.animal:hover {
+    background-color: var(--button-color);
+}
+
+.animal-card__container::before {
+    content: "";
+    position: absolute;
+    background: url(../../assets/images/pgn/palm_foto.png);
+    background-repeat: no-repeat;
+    width: 880px;
+    height: 460px;
+    top: 2150px;
+    left: 0;
+}
+
+.animal-card__container::after {
+    content: "";
+    position: absolute;
+    background: url(../../assets/images/pgn/strelitzia.png);
+    background-repeat: no-repeat;
+    width: 368px;
+    height: 275px;
+    top: 2335px;
+    right: -160px;
 }
