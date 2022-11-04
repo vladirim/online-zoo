@@ -597,3 +597,66 @@ img {
     line-height: 120%;
 }
 
+.bar__wrapper {
+    text-align: center;
+}
+
+.testimonials__input {
+    margin: 22px auto 31px;
+    max-width: 599px;
+    width: 100%;
+    height: 9px;
+    border: .5px solid transparent;
+    background: linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+    box-shadow: inset 0 0 0 10vw #f5f7f6;
+    border-radius: 5px;
+    -webkit-appearance: none;
+    cursor: pointer;
+    transition: ease-in-out .5s;
+}
+
+.testimonials__input::-webkit-slider-thumb {
+    max-width: 113px;
+    width: 100%;
+    height: 6px;
+    border-radius: 5px;
+    background: #FE9013;
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+
+.testimonials__input::-webkit-slider-thumb:hover {
+    background: var(--button-color-hover);
+}
+
+.testimonials__button {
+    margin-left: 220px;
+}
+
+.square__button {
+    cursor: pointer;
+    font-size: var(--normal-font-size);
+    width: 298px;
+    height: 54px;
+    border: none;
+    border-radius: 5px;
+    background: var(--button-color);
+    color: var(--title-color);
+}
+
+.square__button:hover {
+    background: var(--button-color-hover)
+}
+
+.testimonials__container::after {
+    content: "";
+    position: absolute;
+    width: 301px;
+    height: 295.5px;
+    background-image: url(../../assets/images/svg/leaf_foto.svg);
+    right: -54px;
+    top: 4300px;
+}
+
+
+
