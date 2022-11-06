@@ -524,7 +524,7 @@ img {
 }
 
 .testimonials__content {
-    margin: 143px auto;
+    margin: 143px auto 180px;
 
 }
 
@@ -654,9 +654,150 @@ img {
     width: 301px;
     height: 295.5px;
     background-image: url(../../assets/images/svg/leaf_foto.svg);
-    right: -54px;
-    top: 4300px;
+    right: -104px;
+    top: 4260px;
 }
+
+/*==== Footer ====*/
+
+.footer__container {
+    background-color: #111115;;
+}
+
+.footer__header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 18px 220px;
+}
+
+.footer__logo {
+    width: 82px;
+    height: 52px;
+    margin: 41px 0 50px 0;
+    padding: 1.55px 3.75px 2.55px 3.75px;
+    color: var(--title-color);
+    border: solid var(--title-color) 1px;
+    border-radius: 2px;
+    line-height: 22.82px;
+    text-align: center;
+}
+
+.logo-text__footer {
+    font-size: var(--h1-font-size);
+    color: var(--title-color);
+}
+
+.bamboo__footer {
+    position: relative;
+    bottom: 26px;
+    left: -24px;
+}
+
+.subscribe {
+    margin-top: 39px;
+    margin-right: 58px;
+}
+
+.subscribe__title {
+    margin: 0 0 14px;
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-regular);
+    line-height: 120%;
+    color: var(--title-color);
+}
+
+.subscribe__input {
+    width: 227px;
+    height: 42px;
+    background-color: var(--text-color);
+    border: 1px solid var(--button-color-hover);
+    padding-left: 7px;
+    font-size: var(--normal-font-size);
+    line-height: 140%;
+}
+
+.subscribe__input::placeholder {
+    color: var(--title-color);
+}
+
+.subscribe__button {
+    margin-left: 8px;
+    width: 129px;
+    height: 42px;
+    background-color: var(--title-color);
+    border: 1px solid var(--button-color-active);
+    border-radius: 5px;
+    font-size: var(--normal-font-size);
+    color: var(--button-color-active);
+    cursor: pointer;
+}
+
+.subscribe__button:hover {
+    border: 1px solid var(--button-color-hover);
+    color: var(--button-color-hover);
+}
+
+.footer__button {
+    margin: 0 0 45px 220px;
+}
+
+.button__link {
+    color: var(--title-color);
+}
+
+.footer__buttom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__social-networks {
+    width: 200px;
+    margin: 0 0 40px 220px;
+}
+
+.social-network {
+    margin-bottom: 10px;
+}
+
+.network__icon {
+    background: rgba(196, 196, 196, 0.5);
+    width: 26px;
+    height: 26px;
+    margin-right: 10px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s;
+}
+
+.network__name {
+    font-size: var(--normal-font-size);
+    color: var(--title-color);
+}
+
+.footer__nav {
+    margin: 112px 70px 0 172px;
+}
+
+.copyright__bottom {
+    margin-top: 82px;
+}
+
+.copyright__text {
+    font-weight: var(--font-light);
+    line-height: 130%;
+    margin-bottom: 10px;
+}
+
+.text__bottom {
+    color: var(--title-color);
+}
+
+
+
+
+
 
 
 
