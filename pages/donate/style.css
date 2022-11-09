@@ -8,7 +8,7 @@
 
 .wrapper {
     max-width: 1240px;
-    margin: auto;
+    margin: 0 auto;
     padding: 0 40px;
 }
 
@@ -46,12 +46,60 @@
     backdrop-filter: blur(2px);
     border-radius: 20px;
     margin-top: 60px;
-    text-align: center;
+}
+
+.friends-content__content {
+    width: calc(100% - 184px);
 }
 
 .friends__title {
+    text-align: center;
     font-weight: 400;
     font-size: 48px;
     line-height: 120%;
     color: #FE9013;
+}
+
+.friends__text1 {
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+    color: #333B41;
+}
+
+.friens__diet {
+    max-width: 590px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 44px;
+    margin-top: 60px;
+}
+
+.friends__diet-day {
+    padding-top: 52px;
+}
+
+.diet-day__number {
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 80%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.diet-day__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    color: #333B41;
+    padding-top: 11px;
+}
+
+.frinds__diet-cross {
+    padding-top: 23px;
 }
