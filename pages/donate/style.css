@@ -205,6 +205,12 @@
     margin-bottom: 5px;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
 .donation__input:focus {
     background: url(../../assets/images/svg/dollar-img-focus.svg);
     background-repeat: no-repeat;
