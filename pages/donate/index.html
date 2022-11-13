@@ -115,7 +115,7 @@
                                             <label for="250" class="bar__label">$250</label>
                                         </div>
                                         <div class="bar-circle">
-                                            <input type="radio" class="bar__input" id="100" name="amount" value="100">
+                                            <input type="radio" class="bar__input" id="100" name="amount" value="100" checked>
                                             <label for="100" class="bar__label">$100</label>
                                         </div>
                                         <div class="bar-circle">
@@ -128,7 +128,27 @@
                                         </div>
                                     </div>
                                 </div>
+                                <label class="donation__amount">
+                                    <input type="number" class="donation__input" placeholder="Another amount">
+                                </label>
+                                <div class="donation__period">
+                                    <div class="donation__option">
+                                        <input class="option" type="radio" name="option" id="monthly">
+                                        <label class="option__label" for="monthly">Monthly</label>
+                                    </div>
+                                    <div class="donation__option">
+                                        <input class="option" type="radio" name="option" id="once">
+                                        <label class="option__label" for="once">Once</label>
+                                    </div>
+                                </div>
+                                <div class="feed__button">
+                                    <a href="../../pages/donate/index.html" target="_blank"><button class="round__button">FEED A FRIEND NOW</button></a>
+                                </div>
                             </form>
+
+                            <div class="friends__text3">
+                                <p>Share with your friends on social networks</p>
+                            </div>
                         </div>
                     </div>
                 </div>
