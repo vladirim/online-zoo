@@ -48,8 +48,14 @@ body {
 }
 
 .container {
-    width: 1600px;
+    max-width: 1600px;
     margin: 0 auto;
+}
+
+.wrapper {
+    max-width: 1240px;
+    margin: auto;
+    padding: 0 40px;
 }
 
 h1,h2,h3,ul,p {
@@ -80,16 +86,27 @@ img {
 .header__container {
     height: 80px;
     background-color: var(--text-color);
+    z-index: 10;
 }
 
 .header {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+@media (max-width: 999px) {
+    .header__container {
+        width: 999px;
+    }
 }
 
 .logo {
+    position: relative;
     width: 82px;
     height: 52px;
-    margin: 14px 0 0 220px;
+    /* margin: 14px 0 0 220px; */
     padding: 2.55px 3.75px 2.55px 3.75px;
     color: var(--title-color);
     border: solid var(--title-color) 1px;
@@ -122,6 +139,12 @@ img {
     margin: 0 29px;
 }
 
+@media (max-width: 999px) {
+    .nav__item {
+        margin-right: 19px
+    }
+}
+
 .nav__link {
     color: var(--title-color);
 }
@@ -140,8 +163,13 @@ img {
     color: #f9804e;
 }
 
+.copyright__container {
+    display: flex;
+    justify-content: end;
+    flex-grow: 1;
+}
+
 .copyright {
-    margin: 29px 0 0 377px;
     color: #ffffff;
 }
 
@@ -170,10 +198,24 @@ img {
     background-repeat: no-repeat;
 }
 
+@media (max-width: 999px) {
+    .hero__container {
+        background-size: 1200px 524px;
+        background-position: -100px -20px;
+    }
+}
+
 .hero {
     position: relative;
     top: 12px;
     left: 240px;
+}
+
+@media (max-width: 999px) {
+    .hero {
+        top: -12px;
+        left: 140px;
+    }
 }
 
 .circle {
@@ -181,6 +223,14 @@ img {
 	height: 465px;
 	background: var(--button-color);
 	border-radius: 240px;
+    z-index: -1;
+}
+
+@media (max-width: 999px) {
+    .circle {
+        width: 367px;
+	    height: 367px;
+    }
 }
 
 .hero__text {
@@ -195,6 +245,17 @@ img {
     left: 89px;
 }
 
+@media (max-width: 999px) {
+    .hero__text {
+        font-size: 85.2px;
+        line-height: 64px;
+        width: 367px;
+	    height: 367px;
+        top: 53px;
+        left: 65px;
+    }
+}
+
 .hero__text span {
     color: #ffee2e;
 }
@@ -204,6 +265,14 @@ img {
     top: 135px;
     left: 175px;
 }
+
+@media (max-width: 999px) {
+    .hero__button {
+        top: 48px;
+        left: 110px;
+    }
+}
+
 .round__button {
     cursor: pointer;
     font-size: var(--normal-font-size);
